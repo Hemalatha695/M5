@@ -23,9 +23,8 @@ int main() {
 }
 ```
 ## OUTPUT:
-```
-Modified value: 25.00
-``` 	
+![image](https://github.com/user-attachments/assets/f2eef1b4-1597-40d4-a8cb-ec9ef26cb7e5)
+
 ## RESULT:
 Thus the program to convert a 23.65 into 25 using pointer has been executed successfully.
  
@@ -64,9 +63,8 @@ int main() {
 }
 ```
 ## OUTPUT:
-```
-The product of the first 12 natural numbers is: 479001600
-```
+![image](https://github.com/user-attachments/assets/424ae08e-712d-4cc2-a6b5-67920bf1d23e)
+
          		
 ## RESULT:
 
@@ -93,36 +91,37 @@ Write C Program to find Sum of each row of a Matrix
 #include <stdio.h>
 
 int main() {
+    int rows, cols, i, j, sum;
+    int matrix[10][10];
     
-    int matrix[3][3] = {
-        {1, 2, 3},
-        {4, 5, 6},
-        {7, 8, 9}
-    };
-
-    int rows = 3, cols = 3;
-    for (int i = 0; i < rows; i++) {
-        int rowSum = 0;
-        for (int j = 0; j < cols; j++) {
-            rowSum += matrix[i][j];
+    printf("Enter number of rows: ");
+    scanf("%d", &rows);
+    
+    printf("Enter number of columns: ");
+    scanf("%d", &cols);
+    
+    printf("Enter elements of the matrix:\n");
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            scanf("%d", &matrix[i][j]);
         }
-        printf("Sum of row %d = %d\n", i + 1, rowSum);
     }
-
+    
+    for(i = 0; i < rows; i++) {
+        sum = 0;
+        for(j = 0; j < cols; j++) {
+            sum += matrix[i][j];
+        }
+        printf("Sum of row %d = %d\n", i + 1, sum);
+    }
+    
     return 0;
 }
 ```
 
 
 ## OUTPUT
-```
-Sum of row 1 = 6
-Sum of row 2 = 15
-Sum of row 3 = 24
-```
-
- 
- 
+![image](https://github.com/user-attachments/assets/e921f6b7-e0c7-47ff-8a1b-784dabb22a8c)
 
  ## RESULT
  
@@ -173,15 +172,9 @@ int main() {
 ```
 
  ## OUTPUT
-```
-Enter a string: PROGRAM
-Enter number of rows: 5
-    P
-   RO
-  GRA
- PROGR
-AMPROGR
-```
+![Screenshot 2025-05-23 180029](https://github.com/user-attachments/assets/07576ad4-8c60-4b6e-969f-2cfb78828ad7)
+
+
  
 
 ## RESULT
@@ -238,13 +231,8 @@ int main() {
 }
 ```
 ## OUTPUT
-```
-Enter the number of elements (max 10): 6
-Enter 6 integer elements:
-10 20 30 40 50 60
-You entered:
-10 20 30 40 50 60
-```
+
+![image](https://github.com/user-attachments/assets/3a64de30-6398-468d-9326-410d247d492a)
  
 
 ## RESULT
